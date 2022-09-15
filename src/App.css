@@ -1,0 +1,265 @@
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 300px;
+  margin: auto;
+  background-color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mobile-width: 325px;
+  --mobile-height: 670px;
+  --mobile-radius: 25px;
+  --separator-height: 680px;
+  --bg: #fdf3f2;
+  --mobile-bg: #fdeae6;
+  --intro-bg: #eed7d1;
+  --font-color: #807b7b;
+  --transition: transform 0.7s ease-in-out;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.info {
+  font-family: "Quicksand", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 26px;
+  margin-top: 10px;
+  color: var(--font-color);
+}
+
+.mobile-layout {
+  /* background: url("../public/background\ allbooks.jpeg") center center no-repeat; */
+  width: var(--mobile-width);
+  height: var(--mobile-height);
+  margin: 30px 0;
+  border-radius: var(--mobile-radius);
+  perspective: 500px;
+  overflow: hidden;
+  color: var(--font-color);
+  background-color: var(--mobile-bg);
+  box-shadow: 36px 36px 50px 15px #eed7d1d1;
+}
+.mobile-layout .notification-header {
+  /* background: url("../public/background\ allbooks.jpeg") center center no-repeat; */
+  position: fixed;
+  top: 5px;
+  width: 100%;
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  z-index: 6;
+}
+.mobile-layout .actions {
+  position: fixed;
+  top: 37px;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+  z-index: 6;
+}
+.mobile-layout .book-cover {
+  position: relative;
+  height: var(--separator-height);
+  width: calc(var(--mobile-width) * 2);
+  left: -52.5%;
+  border-top-left-radius: var(--mobile-radius);
+  border-top-right-radius: var(--mobile-radius);
+  background-color: var(--intro-bg);
+  transform-style: preserve-3d;
+  transform-origin: 50% 40%;
+  transition: var(--transition);
+  z-index: 4;
+}
+.mobile-layout .book-top {
+  width: 170px;
+  position: absolute;
+  top: 180px;
+  left: 250px;
+  z-index: 5;
+  transform: translateZ(28.5px);
+}
+.mobile-layout .book-side {
+  position: absolute;
+  top: 430px;
+  left: 222px;
+  transform: translateY(-15px) translateX(0px) translateZ(15px) rotateX(104deg);
+}
+.mobile-layout .book-cover:hover {
+  transform: rotateX(75deg) translateZ(3px) scale(0.75);
+}
+.mobile-layout .book-cover:hover + .preface {
+  transform: translateY(-302px);
+}
+.mobile-layout .book-cover:hover + .preface .icon {
+  transform: rotateX(180deg);
+}
+.mobile-layout .preface {
+  height: var(--separator-height);
+  padding: 50px;
+  transition: var(--transition);
+  background: white;
+}
+.mobile-layout .preface .header {
+  display: flex;
+  align-items: center;
+}
+.mobile-layout .preface .title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.mobile-layout .preface .author {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+}
+.mobile-layout .preface .icon {
+  transform-origin: top;
+  transition: var(--transition);
+}
+.mobile-layout .preface .body {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+}
+.mobile-layout .preface .body p:first-child {
+  margin-bottom: 15px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background: url("../public/Pink\ and\ Purple\ Colorful\ Linktree\ Background.png") center center no-repeat;
+  background-size: cover; */
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.contact-us {
+  background: url("../public/Pink\ and\ Purple\ Colorful\ Linktree\ Background.png") center center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 50px 100px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 14pt;
+  line-height: 28pt;
+  font-family: "Fjalla One";
+  margin-bottom: 28pt;
+  border: none;
+  border-bottom: 5px solid black;
+  background: white;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: black;
+}
+
+input:focus {
+  border-bottom: 5px solid #ffa580;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #fdf3f2;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 2px black;
+}
+button:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+::selection {
+  background: #ffc8ff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border-bottom: 5px solid #95a4ff;
+  -webkit-text-fill-color: #2A293E;
+  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.font-text {
+  font-family: "Quicksand", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 26px;
+}
+
+.home-img {
+  background: url("../public/homebackground.jpeg") center center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.allbooks-img {
+  background-image: url("../public/cleanbackground.jpeg") center center;
+  background-size: "cover";
+  height: 100vh;
+  margin-top: -70px;
+  font-size:50px;
+  background-repeat:no-repeat; 
+} 
+
+

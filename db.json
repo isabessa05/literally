@@ -1,0 +1,94 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Host",
+      "author": "Stephanie Meyer",
+      "image": "https://stepheniemeyer.com/wp-content/uploads/2008/05/the-host-book-1.jpg",
+      "favorite": false,
+      "quote": "Perhabs there could be no joy on this planet without an equal weight of pain to balance it out on some unknown scale.",
+      "genre": "Drama"
+    },
+    {
+      "id": 2,
+      "title": "Love, Lists, and Fancy Ships",
+      "author": "Sarah Grunder Ruiz ",
+      "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1615912487l/57282242.jpg",
+      "favorite": true,
+      "quote": "",
+      "genre": "Romance"
+    },
+    {
+      "id": 3,
+      "title": "The Book Thief",
+      "author": "Markus Zusak",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/914h7ms4FXL.jpg",
+      "favorite": true,
+      "quote": "I have hated words and I have loved them, and I hope I have made them right.",
+      "genre": "Drama"
+    },
+    {
+      "id": 4,
+      "title": "Hidden Pictures",
+      "author": "Jason Rekulak",
+      "image": "https://m.media-amazon.com/images/I/51pfwFKNgRL.jpg",
+      "favorite": false,
+      "quote": "We don/’t know how much our bodies can endure until we make cruel demands of them.",
+      "genre": "Thriller"
+    },
+    {
+      "id": 5,
+      "title": "House of Earth and Blood",
+      "author": "Sarah J. Maas",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91tFtUf+0ZL.jpg",
+      "favorite": false,
+      "quote": "Through love, all is possible.",
+      "genre": "Fantasy"
+    },
+    {
+      "id": 6,
+      "title": "Laura Dean Keeps Breaking Up with Me",
+      "author": "Mariko Tamaki, Rosemary Valero-O'Connell",
+      "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1539096588l/40864841.jpg",
+      "favorite": true,
+      "quote": "It's true that giving can be a part of love. But, contrary to popular belief, love should never take from you",
+      "genre": "romance"
+    },
+    {
+      "id": 7,
+      "title": "The School for Good Mothers",
+      "author": "Jessamine Chan",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/718aMFcFxOL.jpg",
+      "favorite": true,
+      "quote": "She never thought of herself as living in a city full of children, but maybe every city and every neighborhood is full of children when you/’ve lost your own.",
+      "genre": "Fiction"
+    },
+    {
+      "id": 8,
+      "title": "The Institute",
+      "author": "Stephen King",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81pA6-hv+2L.jpg",
+      "favorite": false,
+      "quote": "It came to him, with the force of a revelation, that you had to have been imprisoned to fully understand what freedom was.",
+      "genre": "Fiction"
+    },
+    {
+      "id": 9,
+      "title": "The Midnight Library",
+      "author": "Matt Haig",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81tCtHFtOgL.jpg",
+      "favorite": false,
+      "quote": "The only way to learn is to live.",
+      "genre": "Fiction"
+    },
+    {
+      "id": 10,
+      "title": "The Girl with the Dragon Tattoo",
+      "author": "Stieg Larsson",
+      "image": "https://booklistqueen.com/wp-content/uploads/the-girl-with-the-dragon-tattoo-stieg-larsson.jpg",
+      "favorite": false,
+      "quote": "Everyone has secrets. It's just a matter of finding out what they are.",
+      "genre": "Fiction"
+    }
+  ]
+}
